@@ -1,0 +1,65 @@
+<section class="vh-100 bg-soft d-flex align-items-center contenedor-login">
+    <div class="container">
+<div class="row justify-content-center form-bg-image imagen" >
+ 
+
+    <div class="col-12 d-flex align-items-center justify-content-center">
+     <div class="signin-inner mt-3 mt-lg-0 bg-white shadow-soft border border-light rounded p-4 p-lg-5 w-100 fmxw-500">
+    <div class="text-center text-md-center mb-4 mt-md-0">
+    <h1 class="mb-3 h3">Inicia sesión en nuestra plataforma</h1>
+    <p class="text-gray">Use sus credenciales para acceder a su cuenta.</p>
+</div>
+<form  class="mt-5">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="zmdi zmdi-account"></i>
+                </span>
+            </div>
+            <input type="email" class="form-control" id="input-email" placeholder="Ingrese correo electronico" required="">
+        </div>
+    </div><br>
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="zmdi zmdi-lock"></i>
+                </span>
+                </div>
+                    <input class="form-control" placeholder="Password" type="Contraseña" required="">
+                    
+                    
+                </div>
+                    <div class="d-block d-sm-flex justify-content-between align-items-center mt-2">
+                        <div class="form-group form-check mt-3">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                             <label class="form-check-label form-check-sign-white" for="exampleCheck1">Recuérdame</label>
+                        </div>
+                        <div>
+                            <a href="./forgot-password.html" class="small text-right">¿Contraseña perdida?</a>
+                        </div>
+                    </div>
+                    </div>
+                        <div class="mt-3">
+                            <button type="submit" class="btn btn-block btn-primary">Registrate</button>
+                        </div>
+                    </form>
+                        <div class="mt-3 mb-4 text-center">
+                            <span class="font-weight-normal">o inicie sesión con</span>
+                        </div>
+
+                            <div class="btn-wrapper my-4 text-center">
+                                
+                                <button type="button" (click)="logearConGoogle()" style="position: relative;" class="btn btn-block btn_google"><span style="left: 1em;position: absolute;" class="ml-4"><img src="assets/img/icon-google.svg" alt=""></span>Google</button>
+                                
+
+                            </div>
+                            <div class="d-block d-sm-flex justify-content-center align-items-center mt-4"><span class="font-weight-normal">¿No registrado? <a href="./sign-up-illustration.html" class="font-weight-bold">Crear una cuenta</a></span>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                    
+</section>

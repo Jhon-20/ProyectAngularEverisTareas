@@ -1,0 +1,14 @@
+.ed-container{
+display: flex;
+    flex-wrap: wrap;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 40px;
+    color: white;
+    margin-top: 8em;
+}

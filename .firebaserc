@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tareas-7f7a0": {
+      "hosting": {
+        "AngularProyect": [
+          "tareas-7f7a0"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tareas-7f7a0"
+  }
+}

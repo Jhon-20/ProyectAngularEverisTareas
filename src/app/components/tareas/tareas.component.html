@@ -1,0 +1,76 @@
+<section class="notas_contenedor"> 
+<div  *ngFor="let tarea of tareas"  class="row justify-content-center notas md-5">
+   
+    <b>{{tarea.titulo}}</b>
+    <p>{{tarea.descripcion}}</p>
+
+    <div class="iconos">
+        <i  class="zmdi zmdi-edit zmdi-hc-fw" style="cursor: pointer;" (click)="editar(tarea)" 
+        href=""
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal1"
+        ></i>
+      
+        <i class="zmdi zmdi-delete zmdi-hc-fw red" style="cursor: pointer;" (click)="eliminar(tarea.id)"></i>
+    </div>
+
+  </div>
+</section>
+
+<div
+class="modal fade"
+id="exampleModal1"
+tabindex="-1"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Editar Tarea</h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="modal-body">
+      <form (ngSubmit)="editarForm()">
+        <div class="mb-3">
+          <label for="recipient-name" class="col-form-label"
+     >Título</label
+          >
+          <input  type="text" class="form-control" id="recipient-name" name="titulo" [(ngModel)]="tareaEditar.titulo"/>
+        </div>
+        <div class="mb-3">
+          <label for="message-text" class="col-form-label"
+            >Descripción:</label
+          >
+          <textarea  class="form-control" id="message-text" name="descripcion" [(ngModel)]="tareaEditar.descripcion"></textarea>
+        </div>
+      </form>
+
+    </div>
+    <div class="modal-footer">
+      <button 
+      (click)="retornaTareas()"
+        type="button"
+        class="btn btn-danger"
+        data-bs-dismiss="modal"
+      >
+        Cancelar
+      </button>
+      <button
+        type="button"
+        class="btn btn-warning"
+        style="color: white;"
+        data-bs-dismiss="modal"
+        (click)="editarForm()"
+      >
+        Actualizar
+      </button>
+    </div>
+  </div>
+</div>
+</div>

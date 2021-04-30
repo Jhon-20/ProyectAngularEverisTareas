@@ -1,0 +1,40 @@
+
+<header class="ed-header s-bg-grey s-py-2">
+    <div class="ed-grid lg-grid-5">
+      <!-- Logo  -->
+      <div class="s-cross-center s-main-center lg-main-start">
+          <img class="logo" src="assets/img/logo.svg"><h2 style="margin-top: .8em;color: white;">Mis Notas</h2>
+      </div>
+      <nav class="nav lg-cols-4 s-cross-center ed-grid full">
+        <!--  Menú de navegación    -->
+        <ul class="menu s-main-distribute lg-to-right s-mb-0 s-pl-0 s-py-1">
+          <!--   Item de menú. Contiene link e ícono     -->
+          <li class="lg-mr-3" >
+            <a [routerLink]="['inicio']" class="link s-column s-cross-center" routerLinkActive="active">
+              <!--  El ícono sólo se mostrará en la versión móvil  -->
+              <svg class="icon to-lg s-mb-0">
+                <use href="#home"></use>
+              </svg>
+              <span>Inicio</span>
+            </a>
+          </li>
+          <li class="lg-mr-3">
+            <a  [routerLink]="['documentacion']" class="link s-column s-cross-center" routerLinkActive="active" >
+              <svg class="icon to-lg s-mb-0">
+                <use href="#Documentacion"></use>
+              </svg>
+              <span>Documentacion</span>
+            </a>
+          </li>
+          
+          <li>
+              <a [routerLink]="['login']" style="margin-top:-.4em;" class="button s-mb-2 m-mb-0 btn-document">Iniciar Sessión</a> 
+        
+          </li>
+        </ul>
+      </nav>
+      
+    </div>
+    
+  </header>
+  

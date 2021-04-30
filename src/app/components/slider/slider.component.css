@@ -1,0 +1,35 @@
+
+section.banner{
+    margin-top: 10em;
+   box-sizing: border-box;
+   background: #052C48;
+   
+}
+section.banner .txt_banner{
+    color: white;
+    font-family: 'Fredoka One', cursive;
+font-weight: 400;
+    font-size: 2.3em;
+}
+section.banner .subtitulo{
+    font-family: 'Montserrat', sans-serif;
+    color: #697477;
+}
+.btn-registrar,.btn-document{
+    font-family: 'Fredoka One', cursive;
+    font-weight: 50;
+    padding: .8em;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.btn-registrar:hover,.btn-document:hover{
+    color: white;
+}
+@media(max-width:932px){
+
+      section.banner{
+        margin-top:5em;
+      
+       
+   }
+  }

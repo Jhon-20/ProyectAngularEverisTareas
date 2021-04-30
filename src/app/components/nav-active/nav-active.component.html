@@ -1,0 +1,25 @@
+
+<header class="ed-header s-bg-grey s-py-2">
+    <div class="ed-grid lg-grid-5">
+      <!-- Logo  -->
+      <div class="s-cross-center s-main-center lg-main-start">
+          <img class="logo" src="assets/img/logo.svg"><h2 style="margin-top: .8em;color: white;">Mis Notas</h2>
+      </div>
+      <nav class="nav lg-cols-4 s-cross-center ed-grid full">
+        <!--  Menú de navegación    -->
+        <ul class="menu s-main-distribute lg-to-right s-mb-0 s-pl-0 s-py-1">
+          <!--   Item de menú. Contiene link e ícono     -->
+         
+          <span style="margin-right: 1em;color: white;">{{ nombre }}</span>
+          
+          <li>
+              <a [routerLink]="['/inicio']" style="margin-top:-.4em;" class="button s-mb-2 m-mb-0 btn-document">Cerrar Sessión</a> 
+        
+          </li>
+        </ul>
+      </nav>
+      
+    </div>
+    
+  </header>
+  

@@ -1,0 +1,63 @@
+
+.ed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: #052C48;
+  }
+  .ed-header .logo {
+    height: 2rem;
+  }
+ .btn-document:hover{
+   color: white;
+ }
+  .ed-header .menu {
+    list-style: none;
+  }
+  .ed-header .link {
+    color: lightgrey;
+  }
+  .ed-header .link.active {
+    color: cornflowerblue;
+  }
+  .ed-header .icon {
+    --size: 1.5rem;
+    width: var(--size);
+    height: var(--size);
+    fill: currentColor;
+  }
+  section.banner{
+       margin-top: 10em;
+      box-sizing: border-box;
+      background: #052C48;
+      
+  }
+ h2{
+    font-family: 'Fredoka One', cursive;
+    font-weight: 100;
+}
+  section.banner .txt_banner{
+      color: white;
+  }
+  #contenedor_formulario{
+    width: 150px;
+    border: 2px dashed red;
+    height: 0;
+    opacity: 0;
+  }
+  #contenedor_formulario.abrir{
+    height: 150px;
+    opacity: 1;
+  }
+
+
+  @media(max-width:932px){
+    .ed-header nav{
+        position : fixed;
+        left     : 0;
+        bottom   : 0;
+        background : black;
+      }
+
+  }

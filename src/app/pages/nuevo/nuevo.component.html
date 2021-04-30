@@ -1,0 +1,30 @@
+<app-nav-active></app-nav-active>
+
+
+<li class="lg-mr-3">
+  <a [routerLink]="['lista']" class="link s-column s-cross-center" routerLinkActive="active">
+    <svg class="icon to-lg s-mb-0">
+      <use href="#courses"></use>
+    </svg>
+    
+  </a>
+</li>
+<div class="container contenedor">
+    <header class="main-header">
+      <h1 class="text-center txt_titulo">Mi Lista de Tareas</h1>
+    </header>
+      <app-tareas></app-tareas>
+      
+    <div class="btn_agregar">
+      <a
+        href=""
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        data-bs-whatever="@mdo"
+        >+</a
+      >
+    </div>
+<app-add></app-add>
+   
+  </div>
+  <router-outlet></router-outlet>
